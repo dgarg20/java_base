@@ -3,18 +3,14 @@ package com.dgarg20.java_base;
 import com.dgarg20.java_base.application_manager.healthcheck.ApplicationHealthCheck;
 import com.dgarg20.java_base.application_manager.ApplicationModule;
 import com.dgarg20.java_base.application_manager.ServiceConfiguration;
-import com.dgarg20.java_base.application_manager.filters.RequestFilter;
-import com.dgarg20.java_base.application_manager.healthcheck.RotationHealthCheck;
+import com.dgarg20.java_base.exceptions.ResponseExceptionMapper;
 import com.dgarg20.java_base.resource.ExpenseResource;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
-import com.google.inject.Guice;
-import com.google.inject.Injector;
+import com.google.inject.Module;
 import com.hubspot.dropwizard.guice.GuiceBundle;
 import io.dropwizard.Application;
-
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-
 import io.federecio.dropwizard.swagger.SwaggerBundle;
 import io.federecio.dropwizard.swagger.SwaggerBundleConfiguration;
 import io.swagger.v3.jaxrs2.integration.resources.OpenApiResource;
@@ -23,8 +19,6 @@ import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 
 
@@ -51,7 +45,7 @@ public class MainApp extends Application<ServiceConfiguration> {
         GuiceBundle<ServiceConfiguration> guiceBundle = GuiceBundle.<ServiceConfiguration>newBuilder()
                 .addModule(new ApplicationModule())
                 .setConfigClass(ServiceConfiguration.class)
-                .enableAutoConfig(getClass().getPackage().getName())
+                .enableAutoConfig(autoScanPackages())
                 //enableGuiceEnforcer(false)   to be used with dropwizard juicer.
                 .build();
         bootstrap.addBundle(guiceBundle);
@@ -64,9 +58,12 @@ public class MainApp extends Application<ServiceConfiguration> {
         });
     }
 
+    private Module[] getModules() {
+        return new Module[] { new ApplicationModule()};
+    }
+
 
     public void run(final ServiceConfiguration serviceConfiguration, final Environment environment) throws Exception {
-
         // Loading MainApp
         environment.jersey().register(new OpenApiResource()
                 .openApiConfiguration(getSwaggerConfiguration()));
@@ -80,8 +77,7 @@ public class MainApp extends Application<ServiceConfiguration> {
         environment.jersey().register("com.dgarg20.java_base.application_manager.filters");
         //Injector injector = Guice.createInjector(new ApplicationModule());
         //final ExpenseResource expenseResource = injector.getInstance(ExpenseResource.class);
-        final ExpenseResource expenseResource = new ExpenseResource();
-        environment.jersey().register(expenseResource);
+        environment.jersey().register(new ResponseExceptionMapper(environment.metrics()));
     }
 
     private SwaggerConfiguration getSwaggerConfiguration() {
@@ -98,5 +94,9 @@ public class MainApp extends Application<ServiceConfiguration> {
                 .prettyPrint(true)
                 .resourcePackages(Stream.of("com.dagrg20.java_base")
                         .collect(Collectors.toSet()));
+    }
+
+    private String[] autoScanPackages() {
+        return new String[] { this.getClass().getPackage().getName() };
     }
 }

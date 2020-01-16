@@ -15,7 +15,7 @@ public class ResponseFilter implements ContainerResponseFilter {
     @Override
     public void filter(ContainerRequestContext requestContext,
                            ContainerResponseContext responseContext) throws IOException {
-        log.info("Server Response: {}", responseContext.getEntity());
+        log.info("Server Response: {}", responseContext.getEntityClass());
         MDC.clear();
     }
 }
