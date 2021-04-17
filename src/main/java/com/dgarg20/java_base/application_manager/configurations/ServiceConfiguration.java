@@ -1,22 +1,26 @@
-package com.dgarg20.java_base.application_manager;
+package com.dgarg20.java_base.application_manager.configurations;
 
-import com.dgarg20.java_base.entities.DataSourceConfig;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.Configuration;
+import io.dropwizard.db.DataSourceFactory;
 import io.federecio.dropwizard.swagger.SwaggerBundleConfiguration;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.SessionFactory;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
-@Data
+
+
 @NoArgsConstructor
+@Getter
+@AllArgsConstructor
 public class ServiceConfiguration extends Configuration {
     private String serviceName;
 
-    @JsonProperty("database")
-    private DataSourceConfig dataSourceConfig;
+    @JsonProperty("dataSource")
+    private DataSourceFactory dataSourceConfig;
 
     /*@Valid
     @NotNull
@@ -27,8 +31,8 @@ public class ServiceConfiguration extends Configuration {
     private String oorFileName;
 
     @JsonProperty("swagger")
-    public SwaggerBundleConfiguration swaggerBundleConfiguration;
+    private SwaggerBundleConfiguration swaggerBundleConfiguration;
 
-
-
+    @Setter
+    private SessionFactory sessionFactory;
 }

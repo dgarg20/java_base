@@ -20,17 +20,18 @@ public class RequestFilter implements ContainerRequestFilter {
     @Override
     public void filter(ContainerRequestContext ctx) throws IOException {
         String traceId;
-        if(!ctx.getHeaders().get(HeaderConstants.traceIdHeaderIncoming).isEmpty())
-            traceId = (String) ctx.getHeaders().get(HeaderConstants.traceIdHeaderIncoming).get(0);
-        else
-            traceId = UUID.randomUUID().toString();
+//        if(!ctx.getHeaders().get(HeaderConstants.traceIdHeaderIncoming).isEmpty())
+//            traceId = (String) ctx.getHeaders().get(HeaderConstants.traceIdHeaderIncoming).get(0);
+//        else
+//            traceId = UUID.randomUUID().toString();
+        traceId = UUID.randomUUID().toString();
         MDC.put("trans.id", traceId);
 
         log.info("trace ID {}", traceId);
         log.info("{} {} \nheaders: {}, body: {}", ctx.getMethod(), ctx.getUriInfo().getAbsolutePath().getQuery(), ctx.getHeaders(), ctx.getEntityStream());
 
         if (ctx.getMethod().equals("DELETE")) {
-           // LOG.info("\"Deleting request");
+            // LOG.info("\"Deleting request");
         }
     }
 }

@@ -1,0 +1,6 @@
+from debian:stretch
+maintainer Deepanshu Garg(dgarg20@gmail.com)
+
+Label Description = "Java Base Project"
+
+RUN apt-get update

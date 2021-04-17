@@ -1,6 +1,6 @@
 package com.dgarg20.java_base.application_manager.managed;
 
-import com.dgarg20.java_base.application_manager.ServiceConfiguration;
+import com.dgarg20.java_base.application_manager.configurations.ServiceConfiguration;
 import com.google.inject.Inject;
 import io.dropwizard.lifecycle.Managed;
 

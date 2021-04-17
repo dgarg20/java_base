@@ -29,7 +29,7 @@ public class ResponseExceptionMapper implements ExceptionMapper<Exception> {
     public Response toResponse(Exception e) {
         //exceptions.mark();
         ServiceExceptionResponse serviceExceptionResponse = null;
-        log.error(e.getClass() + " Excdfff" + e.getMessage());
+        log.error("Exception Class" + e.getClass() + "Exception Message" + e.getMessage());
 
         if (e instanceof IllegalArgumentException) {
             IllegalArgumentException ex = (IllegalArgumentException) e;
@@ -47,15 +47,11 @@ public class ResponseExceptionMapper implements ExceptionMapper<Exception> {
         else {
             serviceExceptionResponse = new ServiceExceptionResponse(Response.Status.OK.getStatusCode(), "internal_server_error", "Some Thing Went Wrong");
         }
-        //log.error(baseException.toString());
-
         return Response.status(serviceExceptionResponse.getStatus())
                 .header(HeaderConstants.traceIdHeaderOutgoing, MDC.get("trans.id"))
                 .type(MediaType.APPLICATION_JSON_TYPE)
                 .entity(serviceExceptionResponse)
                 .build();
-
-
     }
 
 

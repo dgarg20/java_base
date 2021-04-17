@@ -5,12 +5,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+
 @JsonIgnoreProperties
 public class ServiceException extends Exception{
-    private int status;
-    private String code;
+    private ServiceErrors serviceError;
     private String message;
+
+    public ServiceException(ServiceErrors serviceError){
+        this.serviceError = serviceError;
+        this.message = serviceError.getMessage();
+    }
+
+    public ServiceException(ServiceErrors serviceError, String message){
+        this.serviceError = serviceError;
+        this.message = message;
+    }
 }
