@@ -12,6 +12,7 @@
         <module>movie_booking</module>
         <module>toll_booking_system</module>
         <module>stocks_market</module>
+        <module>stock2_bkp</module>
     </modules>
     <packaging>pom</packaging>
 

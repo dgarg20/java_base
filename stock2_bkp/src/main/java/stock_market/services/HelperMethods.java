@@ -1,4 +1,4 @@
-package com.dgarg20.stock_market.service;
+package com.dgarg20.stock_market.services;
 
 /**
  * Created by Deepanshu Garg on 18/04/21.

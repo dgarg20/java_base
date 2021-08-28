@@ -1,16 +1,15 @@
 package com.dgarg20.stock_market;
 
-import com.dgarg20.stock_market.Exception.ServiceException;
 import com.dgarg20.stock_market.entities.OrderRequest;
-import com.dgarg20.stock_market.service.*;
+import com.dgarg20.stock_market.exception.ServiceException;
+import com.dgarg20.stock_market.services.*;
 
 import java.util.List;
 
 /**
- * Created by Deepanshu Garg on 12/04/21.
+ * Created by Deepanshu Garg on 18/04/21.
  */
-public class StockMainClass {
-
+public class MainClass {
     public static void main(String[] args) {
         FileService fileService = new FileService();
         OrderService orderService = new OrderService();

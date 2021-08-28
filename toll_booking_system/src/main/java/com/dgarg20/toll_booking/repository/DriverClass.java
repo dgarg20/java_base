@@ -1,10 +1,12 @@
 package com.dgarg20.toll_booking.repository;
 
-import com.dgarg20.test1.models.*;
+import com.dgarg20.toll_booking.models.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Deepanshu Garg on 30/01/21.

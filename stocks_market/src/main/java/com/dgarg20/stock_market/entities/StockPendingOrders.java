@@ -1,21 +1,30 @@
 package com.dgarg20.stock_market.entities;
 
+import com.google.inject.Singleton;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
+
+
 
 /**
  * Created by Deepanshu Garg on 12/04/21.
  */
-public class StockOrdersPending {
-    PriorityQueue<Bid> buyOrders;
-    PriorityQueue<Bid> sellOrders;
 
-    public StockOrdersPending(){
-       this.buyOrders = new PriorityQueue<Bid>((o1, o2) -> {
-           if(o1.getPrice() < o2.getPrice())
-               return 1;
-           else return -1;
-       });
+@Getter
+@Setter
+public class StockPendingOrders {
+    private PriorityQueue<Bid> buyOrders;
+    private PriorityQueue<Bid> sellOrders;
+
+    public StockPendingOrders(){
+        this.buyOrders = new PriorityQueue<Bid>((o1, o2) -> {
+            if(o1.getPrice() < o2.getPrice())
+                return 1;
+            else return -1;
+        });
 
         this.sellOrders = new PriorityQueue<Bid>((o1, o2) -> {
             if(o1.getPrice() < o2.getPrice())
@@ -24,7 +33,7 @@ public class StockOrdersPending {
         });
     }
 
-    public void matchOrder(OrderRequest orderRequest) {
+    /*public void matchOrder(OrderRequest orderRequest) {
         if (orderRequest.getOrderType() == OrderType.BUY) {
             while (!sellOrders.isEmpty() && orderRequest.getQty() > 0) {
                 Bid availableBid = sellOrders.peek();
@@ -89,16 +98,12 @@ public class StockOrdersPending {
             }
             sellOrders.add(new Bid(orderRequest.getPrice(), orderRequest));
         }
-    }
+    }*/
 
 
     public void addBid(Bid bid, OrderType orderType){
         if(orderType == OrderType.BUY)
             buyOrders.add(bid);
         else sellOrders.add(bid);
-    }
-
-    public void printOrderMatch(String buyOrderId, float price, String sellOrderId, int qty){
-        System.out.println(buyOrderId + " " + price + " "  + qty + " " + sellOrderId);
     }
 }
