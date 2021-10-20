@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="882fcc68-7649-4b54-b433-c08738c7b30a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideInfoMessages" value="true" />
+    <option name="hideWarnings" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+    <option name="HIDE_INFO_MESSAGES" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1fXjxhOJR6cnidrhgjxEup15oOU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/dgarg20/ds/graph/dfs" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/dgarg20/ds/graph/dfs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test1">
+    <configuration name="AllSwitchedOnBulbsShining" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dgarg20.ds.temp.AllSwitchedOnBulbsShining" />
+      <module name="DS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dgarg20.ds.temp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringPermutations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dgarg20.ds.strings.StringPermutations" />
+      <module name="DS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dgarg20.ds.strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringToNumberLC8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dgarg20.ds.strings.StringToNumberLC8" />
+      <module name="DS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dgarg20.ds.strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dgarg20.ds.temp.Test1" />
+      <module name="DS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dgarg20.ds.temp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.dgarg20.ds.trees in DS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dgarg20.ds.trees.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dgarg20.ds.trees" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.StringToNumberLC8" />
+      <item itemvalue="Application.AllSwitchedOnBulbsShining" />
+      <item itemvalue="Application.StringPermutations" />
+      <item itemvalue="JUnit.com.dgarg20.ds.trees in DS" />
+      <item itemvalue="Application.Test1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.StringPermutations" />
+        <item itemvalue="Application.AllSwitchedOnBulbsShining" />
+        <item itemvalue="Application.StringToNumberLC8" />
+        <item itemvalue="JUnit.com.dgarg20.ds.trees in DS" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../akka-quickstart-scala" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/bfm_calculator" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="882fcc68-7649-4b54-b433-c08738c7b30a" name="Default Changelist" comment="" />
+      <created>1596371579167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596371579167</updated>
+      <workItem from="1596371580995" duration="7384000" />
+      <workItem from="1597573480089" duration="521000" />
+      <workItem from="1597582163585" duration="3960000" />
+      <workItem from="1602404375880" duration="8374000" />
+      <workItem from="1602839125530" duration="8237000" />
+      <workItem from="1603793129630" duration="9175000" />
+      <workItem from="1603962800610" duration="543000" />
+      <workItem from="1609014883044" duration="940000" />
+      <workItem from="1610299425876" duration="1858000" />
+      <workItem from="1610344240218" duration="2738000" />
+      <workItem from="1610430355410" duration="876000" />
+      <workItem from="1610439441684" duration="65000" />
+      <workItem from="1613985768428" duration="409000" />
+      <workItem from="1615010588653" duration="1492000" />
+      <workItem from="1615278814129" duration="527000" />
+      <workItem from="1615301361077" duration="5489000" />
+      <workItem from="1616741540533" duration="1106000" />
+      <workItem from="1617610621036" duration="1107000" />
+      <workItem from="1618469575044" duration="562000" />
+      <workItem from="1618562589213" duration="128000" />
+      <workItem from="1620563275278" duration="2050000" />
+      <workItem from="1621321958379" duration="8724000" />
+      <workItem from="1622529298870" duration="460000" />
+      <workItem from="1622810994659" duration="520000" />
+      <workItem from="1623959896768" duration="2268000" />
+      <workItem from="1624134352608" duration="2925000" />
+      <workItem from="1624518058069" duration="1368000" />
+      <workItem from="1624780224859" duration="547000" />
+      <workItem from="1625054528179" duration="1275000" />
+      <workItem from="1625124697853" duration="431000" />
+      <workItem from="1625810332441" duration="1349000" />
+      <workItem from="1626081848905" duration="670000" />
+      <workItem from="1626172177696" duration="263000" />
+      <workItem from="1626635698463" duration="2301000" />
+      <workItem from="1626853873390" duration="489000" />
+      <workItem from="1627113239158" duration="174000" />
+      <workItem from="1627470870336" duration="17000" />
+      <workItem from="1627884830387" duration="789000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="127" key="#Project_Structure" timestamp="1622400631746">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="127" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1622400631746" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622403853828">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1622403853828" />
+    <state x="482" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1624141502583">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="482" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.877@0.23.1440.877" timestamp="1624141502583" />
+    <state x="483" y="177" key="#xdebugger.evaluate" timestamp="1622326167166">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="483" y="177" key="#xdebugger.evaluate/0.23.1440.877@0.23.1440.877" timestamp="1622326167166" />
+    <state width="1398" height="259" key="GridCell.Tab.0.bottom" timestamp="1627896211781">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1627896211781" />
+    <state width="1398" height="259" key="GridCell.Tab.0.center" timestamp="1627896211780">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1627896211780" />
+    <state width="1398" height="259" key="GridCell.Tab.0.left" timestamp="1627896211780">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1627896211780" />
+    <state width="1398" height="259" key="GridCell.Tab.0.right" timestamp="1627896211780">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="259" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1627896211780" />
+    <state width="1398" height="183" key="GridCell.Tab.1.bottom" timestamp="1622404097879">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1622404097879" />
+    <state width="1398" height="183" key="GridCell.Tab.1.center" timestamp="1622404097879">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1622404097879" />
+    <state width="1398" height="183" key="GridCell.Tab.1.left" timestamp="1622404097878">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1622404097878" />
+    <state width="1398" height="183" key="GridCell.Tab.1.right" timestamp="1622404097879">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="183" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1622404097879" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1622403944997">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1622403944997" />
+    <state x="794" y="480" key="com.intellij.ide.util.TipDialog" timestamp="1626081929419">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="794" y="480" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1626081929419" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/dp/LCS/relatedProblems/ShortestCommonSuperSequenceLength.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/graph/traversals/CriticalPathInGraph.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/graph/traversals/CriticalPathInGraph.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/graph/traversals/CriticalPathInGraph.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/back_tracking/Solution.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/back_tracking/Solution.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/back_tracking/Solution.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/back_tracking/Solution.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/back_tracking/Solution.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/practise/localMinGlobalMaxSubArray.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/dgarg20/ds/practise/localMinGlobalMaxSubArray.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

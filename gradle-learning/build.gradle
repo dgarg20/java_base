@@ -1,0 +1,111 @@
+plugins {
+    id 'java'
+}
+
+group 'com.dgarg20'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+task printTask {
+    println 'hello world'
+}
+
+task hi(type: Greeting)
+
+task whatsUp(type: Greeting) {
+    person = "Deepanshu"
+    //
+    doFirst{
+        println 'before'
+    }
+    //
+    doLast{
+        println 'After'
+    }
+}
+
+class Greeting extends DefaultTask{
+    String person = "World"
+
+    Greeting(){
+        description = "Template"
+        group = 'HelpT'
+    }
+    @TaskAction
+    void sayHello(){
+        println "Hello $person "
+    }
+}
+
+task copyTask(type: Copy) {
+    from ''
+    into ''
+}
+
+task foo
+
+task bar {
+    dependsOn foo
+}
+
+task helloWorld{
+    doLast{
+        println "Hello World"
+    }
+}
+
+task date{
+    dependsOn helloWorld
+    doLast{
+        println(new Date())
+    }
+}
+
+// adding '' in depends on dependsOn 'hello' avoid the traps for the gradle that the task it depends on
+
+
+
+
+task hello{
+    doLast{
+        println "Hello World"
+    }
+}
+
+task dateN {
+    finalizedBy hello
+    //mustRunAfter
+    //shouldRunAfter
+    doLast {
+        println(new Date())
+    }
+}
+
+println 'will print top level name $name'
+task helloEg2{
+    doLast{
+        println 'will print task name $name'
+        println 'will print top level project name ${project.name}'
+        println "Hello World"
+    }
+}
+
+import java.time.format.FormatStyle.*
+task printDateTask{
+//    descrption='just print date time'
+
+    doLast{
+        println(" Current date time " + LocalDateTime.now())
+        println(" Current date time in format MMM-dd-yyyy" + LocalDateTime.now().format('MMM-dd-yyyy'))
+        println (" Current date time using formator" + LocalDateTime.now().format(FormatStyle.MEDIUM))
+    }
+}

@@ -1,0 +1,89 @@
+server:
+  rootPath: /crud/*
+
+  adminConnectors:
+      -
+        port: 5511
+        type: http
+    applicationConnectors:
+      -
+        acceptorThreads: 4
+        port: 5510
+        selectorThreads: 14
+        type: http
+    maxQueuedRequests: 200
+    maxThreads: 100
+    requestLog:
+        appenders:
+          - type: file
+            currentLogFilename: /Users/deepanshu.g/Documents/logs/dropwizardcurd/access.log
+            archivedLogFilenamePattern: //Users/deepanshu.g/Documents/logs/dropwizardcurd/access-%d-%i.log
+            archivedFileCount: 3
+            timeZone: IST
+            maxFileSize: 200MB
+
+
+
+
+databaseConfiguration:
+  # the name of your JDBC driver
+  driverClass: com.mysql.jdbc.Driver
+  # the username
+  user: ${DATABASE_USERNAME}
+    # the password
+  password: ${DATABASE_USER_PASSWORD}
+  # the JDBC URL
+  url: jdbc:mysql://localhost:3306/dropwizard_crud
+  # any properties specific to your JDBC driver:
+  properties:
+    charSet: UTF-8
+  # the maximum amount of time to wait on an empty pool before throwing an exception
+  maxWaitForConnection: 1s
+
+  # the SQL query to run when validating a connection's liveness
+  validationQuery: "/* MyService Health Check */ SELECT 1"
+
+  # the minimum number of connections to keep open
+  minSize: 8
+
+  # the maximum number of connections to keep open
+  maxSize: 32
+
+  # whether or not idle connections should be validated
+  checkConnectionWhileIdle: true
+
+  validationInterval: 10s
+  minIdleTime: 1 minute
+
+logging:
+  level: INFO
+  appenders:
+    - type: file
+      currentLogFilename: /Users/deepanshu.g/Documents/logs/dropwizardcurd/debug.log
+      threshold: DEBUG
+      archive: true
+      archivedLogFilenamePattern: /Users/deepanshu.g/Documents/logs/dropwizardcurd/debug-%d-%i.log
+      archivedFileCount: 3
+      timeZone: IST
+      maxFileSize: 20MB
+
+    - type: file
+      currentLogFilename: /Users/deepanshu.g/Documents/logs/dropwizardcurd/info.log
+      threshold: INFO
+      archive: true
+      archivedLogFilenamePattern: /Users/deepanshu.g/Documents/logs/dropwizardcurd/info-%d-%i.log
+      archivedFileCount: 3
+      timeZone: IST
+      maxFileSize: 20MB
+
+    - type: file
+      currentLogFilename: /Users/deepanshu.g/Documents/logs/dropwizardcurd/error.log
+      threshold: ERROR
+      archive: true
+      archivedLogFilenamePattern: /Users/deepanshu.g/Documents/logs/dropwizardcurd/error-%d-%i.log
+      archivedFileCount: 3
+      timeZone: IST
+      maxFileSize: 20MB
+    - type: console
+      timeZone: IST
+      threshold: ALL
